@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f7f5">
+  <title>Récapitulatif</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="recapitulatif">
+  <header class="site-header">
+    <nav id="menu" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+    </nav>
+  </header>
+
+  <main class="conteneur">
+    <p class="surtitre">Votre parcours</p>
+    <h1 id="titre-recap">Récapitulatif</h1>
+    <div id="erreur-recap" class="message message-erreur" role="alert" hidden></div>
+    <section id="zone-recap" hidden>
+      <ol id="liste-reponses" class="liste-reponses"></ol>
+
+      <section class="section-ville" aria-labelledby="titre-ville">
+        <h2 id="titre-ville">Votre ville</h2>
+        <form id="formulaire-ville">
+          <label for="ville">Ville française</label>
+          <div class="champ-ville">
+            <input id="ville" name="ville" type="text" list="liste-villes" autocomplete="address-level2" required>
+            <datalist id="liste-villes"></datalist>
+            <button class="bouton" type="submit">Valider</button>
+          </div>
+        </form>
+        <p id="ville-selectionnee" class="message" role="status" aria-live="polite"></p>
+      </section>
+
+      <div class="actions-fin">
+        <button id="bouton-recommencer" class="bouton bouton-secondaire" type="button">Recommencer le questionnaire</button>
+        <a href="index.html">Retour à l’accueil</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/Lib_Questions_Vote.js"></script>
+  <script src="js/Lib_Questions_Vote_Order.js"></script>
+  <script src="js/Lib_Questionnaires.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

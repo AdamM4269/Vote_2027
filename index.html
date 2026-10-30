@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f7f5">
+  <title>Questionnaires pratiques</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="accueil">
+  <header class="site-header">
+    <nav id="menu" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+    </nav>
+  </header>
+
+  <main class="conteneur">
+    <p class="surtitre">Questionnaires pratiques</p>
+    <h1>Des réponses claires, étape par étape.</h1>
+    <p class="introduction">Choisissez un questionnaire pour obtenir des informations adaptées à votre situation.</p>
+    <ul id="liste-questionnaires" class="liste-questionnaires" aria-label="Questionnaires disponibles"></ul>
+    <p id="message-accueil" class="message" role="status" hidden></p>
+  </main>
+
+  <script src="js/Lib_Questions_Vote.js"></script>
+  <script src="js/Lib_Questions_Vote_Order.js"></script>
+  <script src="js/Lib_Questionnaires.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f7f5">
+  <title>Questionnaire</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="questionnaire">
+  <header class="site-header">
+    <nav id="menu" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+    </nav>
+  </header>
+
+  <main id="contenu" class="conteneur">
+    <p class="surtitre">Questionnaire</p>
+    <h1 id="titre-questionnaire">Chargement…</h1>
+    <p id="description-questionnaire" class="introduction"></p>
+    <section id="zone-question" class="zone-question" aria-live="polite" aria-atomic="true" hidden>
+      <p id="progression" class="progression"></p>
+      <h2 id="texte-question"></h2>
+      <div class="actions-reponse" aria-label="Choisissez une réponse">
+        <button class="bouton bouton-reponse" type="button" data-reponse="oui">Oui</button>
+        <button class="bouton bouton-reponse bouton-secondaire" type="button" data-reponse="non">Non</button>
+      </div>
+      <button id="bouton-retour" class="bouton-retour" type="button">← Retour</button>
+    </section>
+    <div id="erreur-questionnaire" class="message message-erreur" role="alert" hidden></div>
+  </main>
+
+  <script src="js/Lib_Questions_Vote.js"></script>
+  <script src="js/Lib_Questions_Vote_Order.js"></script>
+  <script src="js/Lib_Questionnaires.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
